@@ -1,0 +1,78 @@
+#headerlogo {
+    height: 150;
+    width: auto;
+}
+
+.beforefooter,
+.beforefooter h5 {
+    background: #151a1f;
+    color: lightgrey;
+}
+
+.collapse {
+    justify-content: space-around;
+}
+
+footer {
+    background: #161e24;
+}
+
+footer a {
+    color: #ffc107;
+}
+
+
+.headertop {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 26.5;
+}
+
+.headerbot {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 20;
+}
+
+.nav-link {
+    font-size: 18;
+}
+
+.want {
+    margin-top: 50px;
+}
+
+@media screen and (max-width:520px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:820px) {
+    .want {
+        margin-top: 1.25rem;
+    }
+}
+
+@media screen and (max-width:1220px) {
+
+    .collapse a,
+    .collapse {
+        justify-content: space-evenly;
+        font-size: 15px;
+    }
+
+    .headerbot {
+        font-family: 'Playfair Display SC', serif;
+        font-size: 12.5;
+    }
+
+    #headerlogo {
+        height: 110;
+        width: auto;
+    }
+
+    .headertop {
+        font-family: 'Playfair Display SC', serif;
+        font-size: 16.5;
+    }
+}

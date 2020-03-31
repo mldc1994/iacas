@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="container border border-dark">
+    <h2 class="py-3 font-weight-bold text-center"> LATEST POSTS </h2>
+    <div class="row d-flex justify-content-center">
+        {% for i in range(0, 1) %}
+            <div class="col-md-6 pb-5 d-flex">
+                <div class="card">
+                    <img class="card-img-top" src="../static/images/{{ blog.imagee }}" alt="Card image cap">
+                    <div class="card-body text-center">
+                        <p class="card-text">{{ blog.title }}</p>
+                        <p class="card-text">{{ blog.author }}</p>
+                        <p class="card-text">{{ blog.content }}</p>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block content %}
+<form class="form" method="POST" action="/create" enctype="multipart/form-data">
+  <input class="w-50 p-2 m-1" placeholder="Author" type="text" name="author" required><br>
+  <input class="w-50 p-2 m-1" placeholder="Blog Title" type="text" name="title" required><br>
+  <textarea class="w-50 p-2 m-1" type = "text" placeholder = "Blog Content" name="content" required></textarea><br>
+    <label for="file-upload" class="custom-file-upload">
+        Click to choose Image
+    </label>
+    <input id="file-upload" name='imagee' type="file" style="display:none;">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <input type="submit" value="Submit">
+</form>
+
+<script>
+    $("#file-upload").change(function() {
+  var i = $(this)
+    .prev("label")
+    .clone();
+  var file = $("#file-upload")[0].files[0].name;
+  $(this)
+    .prev("label")
+    .text(file);
+});
+$("#file-upload2").change(function() {
+  var i = $(this)
+    .prev("label")
+    .clone();
+  var file = $("#file-upload2")[0].files[0].name;
+  $(this)
+    .prev("label")
+    .text(file);
+});
+</script>
+{% endblock %}

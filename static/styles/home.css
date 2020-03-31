@@ -1,0 +1,297 @@
+body {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+p {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+#blogs {
+    height: auto;
+    width: 200px;
+}
+
+
+
+
+
+#benefits-pic1 {
+    height: 300px;
+    width: auto;
+}
+
+#benefits-pic2 {
+    height: 220px;
+    width: auto;
+}
+
+#benefits-pic3 {
+    height: 140px;
+    width: auto;
+}
+
+#carousel-img {
+    object-fit: cover;
+}
+
+.benefits {
+    padding: 0 50px;
+}
+
+.carousel-inner a {
+    background-color: #32CD32;
+}
+
+.card {
+    transition: all .3s cubic-bezier(0.175, 0.885, 0, 1);
+    background-color: #fff;
+    width: 33.3%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.carousel-inner {
+    max-height: 580px;
+}
+
+.courses {
+    justify-content: center;
+
+}
+
+.courses .card {
+    width: 400px;
+    height: 380px;
+    border-bottom: 10px solid #32CD32;
+    border-left: none;
+    border-right: none;
+}
+
+.courses .card-img-top {
+    height: 300;
+    width: auto;
+    object-fit: cover;
+}
+
+.courses .card-img-top:hover {
+    -webkit-filter: brightness(80%);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.courses .card-text {
+    font-size: 16px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+}
+
+.d {
+    display: none;
+    left: -35;
+    top: 8;
+    font-size: 13;
+}
+
+.firstslide {
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 320px;
+    left: -10px;
+    padding-left: 70px;
+}
+
+.firstslidetext {
+    font-size: 40px;
+}
+
+.mediarow {
+    padding: 0 100;
+}
+
+.mediaa .card-body {
+    padding-bottom: 0px;
+    padding-top: 17px;
+}
+
+.mediaa h5 {
+    color: #ffc107;
+}
+
+.mediaa i {
+    font-size: 100px;
+    color: #ffc107;
+    transition: 0.3s
+}
+
+.mediaa i:hover {
+    font-size: 130px;
+    color: #ffc107;
+}
+
+.posts a {
+    background-color: #32CD32;
+    font-size: 16px;
+}
+
+.posts .author {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.posts .card {
+    width: 400px;
+    height: 435px;
+}
+
+.posts .card:hover .d {
+    display: block;
+}
+
+.posts .card-text {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+}
+
+.posts .card-img-top {
+    height: 300;
+    width: auto;
+    object-fit: cover;
+}
+
+.posts .card-img-top:hover {
+    -webkit-filter: brightness(60%);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.3s ease;
+}
+
+.posts .content {
+    font-size: 15px;
+    word-wrap: break-word;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.postcontainer {
+    box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
+    overflow-x: hidden;
+    background-image: url('/static/images/car.jpg');
+    background-attachment: fixed;
+}
+
+.postcontainer .row {
+    padding: 0 100;
+}
+
+.postcontainer .title {
+    font-family: 'Fira Sans Extra Condensed',
+        sans-serif;
+}
+
+.secondslide {
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 320px;
+    left: -10px;
+    padding-left: 70px;
+}
+
+.secondslidetext {
+    font-size: 40px;
+}
+
+.thirdslide {
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 320px;
+    left: -10px;
+    padding-left: 70px;
+}
+
+.thirdslidetext {
+    font-size: 40px;
+}
+
+.section-overall li {
+    list-style-type: none;
+}
+
+.section-overall a {
+    text-decoration: none;
+    color: black;
+}
+
+.welcome {
+    background-image: url("/static/images/bgforwelcome.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 275%;
+    background-attachment: fixed;
+}
+
+.welcome .content {
+    color: lavender;
+}
+
+@media screen and (max-width:820px) {
+    .firstslide {
+        bottom: 20px;
+        padding-left: 40px;
+    }
+
+    .firstslidetext {
+        font-size: 20px;
+    }
+
+    .secondslide {
+        bottom: 20px;
+        padding-left: 40px;
+    }
+
+    .secondslidetext {
+        font-size: 20px;
+    }
+
+    .thirdslide {
+        bottom: 20px;
+        padding-left: 40px;
+    }
+
+    .thirdslidetext {
+        font-size: 20px;
+    }
+
+    .mediarow {
+        padding: 0 50;
+    }
+
+    .posts .card {
+        width: 400px;
+    }
+
+    .postcontainer .row {
+        padding: 0 25;
+    }
+}
+
+@media screen and (max-width:1014px) {
+    #benefits-pic1 {
+        height: 300px;
+        width: auto;
+    }
+
+    #benefits-pic2 {
+        height: 150px;
+        width: auto;
+    }
+
+    #benefits-pic3 {
+        height: 100px;
+        width: auto;
+    }
+}
