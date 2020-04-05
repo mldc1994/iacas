@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 {% block content %}
-<form class="form" method="POST" action="/create" enctype="multipart/form-data">
+<form class="form d-flex flex-column align-items-center" method="POST" action="/create" enctype="multipart/form-data">
   <input class="w-50 p-2 m-1" placeholder="Author" type="text" name="author" required><br>
   <input class="w-50 p-2 m-1" placeholder="Blog Title" type="text" name="title" required><br>
   <textarea class="w-50 p-2 m-1" type = "text" placeholder = "Blog Content" name="content" required></textarea><br>
@@ -9,7 +9,7 @@
     </label>
     <input id="file-upload" name='imagee' type="file" style="display:none;">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <input type="submit" value="Submit">
+  <input class="w-50" type="submit" value="Submit">
 </form>
 
 <script>

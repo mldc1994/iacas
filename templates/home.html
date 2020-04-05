@@ -163,18 +163,18 @@
   <div class="postcontainer w-100 pb-4 border border-dark">
     <h2 class="py-5 font-weight-bold text-center m-0 text-white"> LATEST POSTS </h2>
     <div class="row d-flex align-items-center">
-        {% for post in posts %}
+        {% for p in posts %}
             <div class="posts pb-4 col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
                 <div class="card border-0 position-relative">
-                    <img class="card-img-top" src="static/images/{{ post.imagee }}" alt="Card image cap">
+                    <img class="card-img-top" src="static/images/{{ p["imagee"] }}" alt="Card image cap">
                     <div class="d position-absolute">
-                        <p class="author mb-2 px-5 text-white text-capitalize">by: {{ post.author }}<br>
-                        published: {{ post.datee }}</p>
+                        <p class="author mb-2 px-5 text-white text-capitalize">by: {{ p["author"] }}<br>
+                        published: {{ p["datee"] }}</p>
                     </div>
                     <div class="card-body shadow rounded text-center">
-                        <h5 class="title mb-1 font-weight-bold">{{ post.title }}</h5>
-                        <p class="content mb-2 px-5 text-secondary">{{ post.content }}</p>
-                        <a href="/readmore/{{ post.id }}" class="btn btn-sm btn-block w-75 m-auto text-white">read more</a>
+                        <h5 class="title mb-1 font-weight-bold">{{ p["title"] }}</h5>
+                        <p class="content mb-2 px-5 text-secondary">{{ p["content"] }}</p>
+                        <a href="/readmore/{{ p["id"] }}" class="btn btn-sm btn-block w-75 m-auto text-white">read more</a>
                     </div>
                 </div>
             </div>
